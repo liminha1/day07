@@ -1,12 +1,13 @@
-import random
+small = bool(int(input('it is small. True면 1, False면 0을 입력하시오. : ')))
+green = bool(int(input('it is green. True면 1, False면 0을 입력하시오. : ')))
 
-secret = random.randint(1,10)
-guess = int(input('guess 값을 입력하세요: '))
-
-if guess == secret:
-    print('just right!')
-elif guess < secret:
-    print('too low!')
+if small:
+    if green:
+        print('완두콩 입니다!')
+    else:
+        print('체리 입니다!')
 else:
-    print('too high!')
-print(f'secret은 {secret}입니다.')
+    if green:
+        print('수박 입니다!')
+    else:
+        print('호박 입니다!')
