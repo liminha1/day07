@@ -1,5 +1,13 @@
-# 5.6, 5.7, 5.8
-name = ['duck', 'gourd', 'spitz']
-for i in [0,1,2]:
- name_2 = name[i].capitalize() + 'y Mc' + name[i].capitalize() + 'face'
- print(name_2)
+# 6.2
+guess_me = 7
+number = 1
+while True:
+  if guess_me > number:
+   print('too low')
+  elif guess_me == number:
+   print('found it!')
+   break
+  else :
+   print('opps')
+   break
+  number += 1
