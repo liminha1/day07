@@ -1,18 +1,30 @@
-# 7.8
-surprise = ["Groucho", "Chico", "Harpo"]
-print(surprise)
-# 7.9
-surprise[-1] = surprise[-1].lower()
-print(surprise)
-surprise_last = surprise[-1]
-print(surprise_last)
-surprise_last_list = list(surprise_last)
-print(surprise_last_list)
-surprise_last_rev = []
-for i in range(4,-1,-1):
-      surprise_last_rev.append(f'{surprise_last_list[i]}')
-print(surprise_last_rev)
-surprise[-1] = ''.join(surprise_last_rev)
-print(surprise)
-surprise[-1] = surprise[-1].capitalize()
-print(surprise)
+# 7.10
+odd = []
+for i in range(0,10,2):
+    odd.append(i)
+print(odd)
+# 7.11
+start1 = ["fee", "fie", "foe"]
+rhymes = [
+    ("flop", "get a mop"),
+    ("fope", "turn the rope"),
+    ("fa", "get your ma"),
+    ("fudge", "call the judge"),
+    ("fog", "walk the dog"),
+    ("fun", "say we're done"),
+]
+start2 = "someone better"
+# 첫 번째
+for i in range(0,3):
+    start1[i] = start1[i].capitalize() + '! '
+print(start1)
+rhymes_list = []
+for i in range(0,6):
+    rhymes_list.append(list(rhymes[i]))
+    rhymes_list[i][0] = rhymes_list[i][0].capitalize() + '!'
+print(rhymes_list)
+print(''.join(start1), end='')
+print(rhymes_list[0][0])
+# 두 번째
+print(start2 + ' ', end ='')
+print(rhymes_list[0][1] + '.')
